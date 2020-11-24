@@ -127,7 +127,7 @@ body {
 .impostor .sombra-piso {
     position: absolute;
     bottom: 10px;
-    left: 50%;
+    left: 45%;
     transform: translateX(-50%);
     width: 470px;
     height: 100px;
