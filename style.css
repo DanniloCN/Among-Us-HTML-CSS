@@ -1,0 +1,136 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.impostor {
+    position: relative;
+}
+
+.impostor .corpo {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    border-radius: 35% 45% 0 0;
+    border: 30px solid #000000;
+    overflow: hidden;
+}
+
+.impostor .preenchimento {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #380000;
+}
+
+.impostor .corpo .sombra {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    background: #C70A01;
+    border-radius: 0% 10% 25% 40% / 20% 0% 100% 100%;
+}
+
+.impostor .viseira{
+    position: absolute;
+    width: 200px;
+    height: 130px;
+    background: darkslategray;
+    right: -20px;
+    top: 90px;
+    border: 30px solid #000000;
+    border-radius: 25% 45% 40% / 50%;
+    overflow: hidden;
+    transform: rotate(-4deg);
+}
+
+.impostor .viseira .reflexo-azul {
+    position: absolute;
+    right: 0;
+    width: 90%;
+    height: 70px;
+    background: lightblue;
+    border-radius: 10% 10% 100% 100% / 100% 100% 50% 100%;
+}
+
+.impostor .viseira .reflexo-branco {
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    width: 50%;
+    height: 40px;
+    background: white;
+    border-radius: 30% 70% 30% 30% / 30% 70% 30% 60%;
+}
+
+.pernas {
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-30px)
+}
+
+.impostor .pernas .perna-esquerda {
+    width: 110px;
+    height: 130px;
+    background: #380000;
+    border-left: 30px solid #000000;
+    border-right: 30px solid #000000;
+    border-bottom: 30px solid #000000;
+    border-radius: 0 0 40% 40% ;
+}
+
+.impostor .pernas .perna-direita {
+    position: relative;
+    width: 90px;
+    height: 105px;
+    background: #380000;
+    border-left: 30px solid #000000;
+    border-right: 30px solid #000000;
+    border-bottom: 30px solid #000000;
+    border-radius: 0 0 40% 40%;
+}
+
+.impostor .pernas .perna-direita:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 100px;
+    height: 30px;
+    background: black;
+    border-radius: 0 0 100% 0;
+}
+
+.impostor .mochila {
+    position: absolute;
+    height: 280px;
+    width: 90px;
+    background: #C70A01 ;
+    border: 30px solid #000000;;
+    left: -90px;
+    top: 130px;
+    border-radius: 40% 0 0 40% / 15%;
+    overflow: hidden;
+}
+
+.impostor .mochila .sombra {
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    background: #380000;
+    bottom: 0;
+    border-radius: 40% 0 0 0 / 10% 0 0 0;
+}
+
+.impostor .sombra-piso {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 470px;
+    height: 100px;
+    background: #525858;
+    border-radius: 50%;
+}
