@@ -1,12 +1,14 @@
+
 body {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background: #fcdb1f;
 }
 
 .impostor {
-    position: relative;
+    position: absolute;
 }
 
 .impostor .corpo {
